@@ -12,7 +12,7 @@ var NetworkStore = Fluxxor.createStore({
     this.blockTime = null;
     this.blockTimestamp = null;
     this.networkLag = null;
-    this.ether = null;
+    this.soil = null;
     this.gasPrice = null;
     this.ethereumStatus = null;
     this.mining = null;
@@ -38,7 +38,7 @@ var NetworkStore = Fluxxor.createStore({
       blockTime: this.blockTime,
       blockTimestamp: this.blockTimestamp,
       networkLag: this.networkLag,
-      ether: this.ether,
+      soil: this.soil,
       gasPrice: this.gasPrice,
       ethereumStatus: this.ethereumStatus,
       mining: this.mining,

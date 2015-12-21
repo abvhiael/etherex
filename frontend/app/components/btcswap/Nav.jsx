@@ -9,12 +9,12 @@ let BtcNav = React.createClass({
       <Nav bsStyle="pills" className="panel-group" role="navigation" aria-label="Secondary" justified>
         <li>
           <Link to="/btc/buy" activeClassName="active">
-            <Glyphicon glyph="download" /> <FormattedMessage id='form.buy' /> ether
+            <Glyphicon glyph="download" /> <FormattedMessage id='form.buy' /> soil
           </Link>
         </li>
         <li>
           <Link to="/btc/sell" activeClassName="active">
-            <Glyphicon glyph="upload" /> <FormattedMessage id='form.sell' /> ether
+            <Glyphicon glyph="upload" /> <FormattedMessage id='form.sell' /> soil
           </Link>
         </li>
         <li>

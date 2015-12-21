@@ -110,7 +110,7 @@ var MarketStore = Fluxxor.createStore({
       return [market.favorite ? 'a' : 'b', market.id.toString()].join('-');
     });
 
-    this.market.minTotal = bigRat(this.market.minimum).divide(fixtures.ether).valueOf();
+    this.market.minTotal = bigRat(this.market.minimum).divide(fixtures.soil).valueOf();
     this.market.txs = [];
     this.market.data = [];
     this.market.prices = [];
@@ -129,7 +129,7 @@ var MarketStore = Fluxxor.createStore({
     this.market.data = [];
     this.market.prices = [];
     this.market.messages = [];
-    this.market.minTotal = bigRat(this.market.minimum).divide(fixtures.ether).valueOf();
+    this.market.minTotal = bigRat(this.market.minimum).divide(fixtures.soil).valueOf();
     this.emit(constants.CHANGE_EVENT);
   },
 

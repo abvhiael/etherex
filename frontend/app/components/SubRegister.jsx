@@ -137,7 +137,7 @@ let SubRegister = injectIntl(React.createClass({
     this.props.flux.actions.market.registerMarket({
         name: this.state.code,
         address: "0x" + this.state.address,
-        minimum: bigRat(this.state.minimum).multiply(fixtures.ether).ceil().toDecimal(),
+        minimum: bigRat(this.state.minimum).multiply(fixtures.soil).ceil().toDecimal(),
         decimals: String(this.state.decimals),
         precision: String(Math.pow(10, this.state.precision.length - 2)),
         category: String(this.state.category)

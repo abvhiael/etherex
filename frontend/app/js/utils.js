@@ -58,8 +58,8 @@ var utils = {
     var big = bigRat(wei);
     if (typeof precision === 'undefined')
       precision = 4;
-    if (big.compare(units.Uether.multiply(1000)) > 0) {
-      value = big.divide(units.Uether).valueOf();
+    if (big.compare(units.Usoil.multiply(1000)) > 0) {
+      value = big.divide(units.Usoil).valueOf();
       unit = Object.keys(units)[0];
       if (split)
         return { value: value, unit: unit };

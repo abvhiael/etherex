@@ -43,7 +43,7 @@ let LastPrice = React.createClass({
         <b>Last price:</b>{' '}
         <span className="text-orange">
           { this.state.lastPrice }
-        </span> {(this.state.lastPrice && this.state.lastMarket) ? this.state.lastMarket + "/ETH" : "N/A" }
+        </span> {(this.state.lastPrice && this.state.lastMarket) ? this.state.lastMarket + "/SOIL" : "N/A" }
         <i onClick={this.props.toggleGraph} className={"text-" + this.state.priceChange + " visible-md visible-lg btn btn-xs icon-chart-line"} />
       </div>
     );

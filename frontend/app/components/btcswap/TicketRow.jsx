@@ -31,7 +31,7 @@ let TicketRow = injectIntl(React.createClass({
         </td>
         <td>
           <div className="text-right">
-            <FormattedMessage id='ether' values={{
+            <FormattedMessage id='soil' values={{
                 value: totalEther.value,
                 unit: totalEther.unit
               }}

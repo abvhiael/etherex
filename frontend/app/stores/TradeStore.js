@@ -367,7 +367,7 @@ var TradeStore = Fluxxor.createStore({
             available += thisTotal;
           }
 
-          // console.log("Unfilling, available: " + utils.formatBalance(bigRat(available).multiply(fixtures.ether).valueOf()));
+          // console.log("Unfilling, available: " + utils.formatBalance(bigRat(available).multiply(fixtures.soil).valueOf()));
         }
 
         // Highlight trades that would get filled, or partially

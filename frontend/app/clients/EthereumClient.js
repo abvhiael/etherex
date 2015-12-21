@@ -324,7 +324,7 @@ var EthereumClient = function(params) {
         var amountPrecision = (1 / Math.pow(10, decimals)).toFixed(decimals);
         var priceDecimals = String(precision).length - 1;
         var pricePrecision = (1 / _.parseInt(precision)).toFixed(priceDecimals);
-        var minimumTotal = bigRat(minimum).divide(fixtures.ether).valueOf().toFixed(priceDecimals);
+        var minimumTotal = bigRat(minimum).divide(fixtures.soil).valueOf().toFixed(priceDecimals);
 
         success({
           id: id,
@@ -783,7 +783,7 @@ var EthereumClient = function(params) {
 
         amount = log.args.amount.valueOf();
         price = bigRat(log.args.price.valueOf()).divide(market.precision).valueOf();
-        total = bigRat(amount).divide(Math.pow(10, market.decimals)).multiply(price).multiply(fixtures.ether);
+        total = bigRat(amount).divide(Math.pow(10, market.decimals)).multiply(price).multiply(fixtures.soil);
 
         success({
           id: id,
@@ -849,7 +849,7 @@ var EthereumClient = function(params) {
 
         amount = log.args.amount.valueOf();
         price = bigRat(log.args.price.valueOf()).divide(market.precision).valueOf();
-        total = bigRat(amount).divide(Math.pow(10, market.decimals)).multiply(price).multiply(fixtures.ether);
+        total = bigRat(amount).divide(Math.pow(10, market.decimals)).multiply(price).multiply(fixtures.soil);
 
         success({
           id: id,
@@ -916,7 +916,7 @@ var EthereumClient = function(params) {
 
         amount = log.args.amount.valueOf();
         price = bigRat(log.args.price.valueOf()).divide(market.precision).valueOf();
-        total = bigRat(amount).divide(Math.pow(10, market.decimals)).multiply(price).multiply(fixtures.ether);
+        total = bigRat(amount).divide(Math.pow(10, market.decimals)).multiply(price).multiply(fixtures.soil);
 
         success({
           id: id,
@@ -988,7 +988,7 @@ var EthereumClient = function(params) {
 
         amount = log.args.amount.valueOf();
         price = bigRat(log.args.price.valueOf()).divide(market.precision).valueOf();
-        total = bigRat(amount).divide(Math.pow(10, market.decimals)).multiply(price).multiply(fixtures.ether);
+        total = bigRat(amount).divide(Math.pow(10, market.decimals)).multiply(price).multiply(fixtures.soil);
 
         success({
           id: id,
@@ -1578,7 +1578,7 @@ var EthereumClient = function(params) {
     var bigprice = bigRat(price).multiply(bigRat(precision)).floor(true).toString();
     var total = bigRat(amount)
                   .multiply(price)
-                  .multiply(bigRat(fixtures.ether)).floor(true).toString();
+                  .multiply(bigRat(fixtures.soil)).floor(true).toString();
 
     return {
       amount: bigamount,

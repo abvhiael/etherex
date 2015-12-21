@@ -75,7 +75,7 @@ let TradeFormInstance = injectIntl(React.createClass({
       price > 0 &&
       amount > 0 &&
       total >= this.props.market.market.minTotal &&
-      ((type == 1 && bigRat(this.props.user.user.balanceWei).greaterOrEquals(bigRat(total).multiply(fixtures.ether))) ||
+      ((type == 1 && bigRat(this.props.user.user.balanceWei).greaterOrEquals(bigRat(total).multiply(fixtures.soil))) ||
        (type == 2 && this.props.user.user.balanceSubAvailable >= amount))
     );
   },
@@ -253,7 +253,7 @@ let TradeFormInstance = injectIntl(React.createClass({
   isNotEnoughTotal(total) {
     return (
       this.props.type == 1 &&
-      bigRat(this.props.user.user.balanceWei).lesser(bigRat(total).multiply(fixtures.ether))
+      bigRat(this.props.user.user.balanceWei).lesser(bigRat(total).multiply(fixtures.soil))
     );
   },
 

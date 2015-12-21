@@ -13,7 +13,7 @@ var UserStore = Fluxxor.createStore({
       loading: true,
       id: 'loading...',
       balance: 0,
-      balanceFormatted: {value: 0, unit: 'ether'},
+      balanceFormatted: {value: 0, unit: 'soil'},
       balanceWei: 0,
       balancePending: 0,
       balanceSub: 0,
@@ -110,10 +110,10 @@ var UserStore = Fluxxor.createStore({
 
   onUpdateBalance: function(payload) {
     // console.log("BALANCE", payload.balance);
-    this.user.balance = bigRat(payload.balance).divide(bigRat(fixtures.ether)).valueOf();
+    this.user.balance = bigRat(payload.balance).divide(bigRat(fixtures.soil)).valueOf();
     this.user.balanceFormatted = utils.formatEther(payload.balance);
     this.user.balanceWei = payload.balance;
-    this.user.balancePending = bigRat(payload.balancePending).divide(bigRat(fixtures.ether)).valueOf();
+    this.user.balancePending = bigRat(payload.balancePending).divide(bigRat(fixtures.soil)).valueOf();
     this.emit(constants.CHANGE_EVENT);
   },
 

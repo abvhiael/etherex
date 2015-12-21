@@ -332,7 +332,7 @@ let TicketActions = function() {
       var ticket = {
         id: '-',
         address: btcAddress,
-        amount: bigRat(numEther).times(fixtures.ether),
+        amount: bigRat(numEther).times(fixtures.soil),
         price: bigRat(btcTotal).divide(numEther).toDecimal(),
         total: btcTotal,
         expiry: 1,

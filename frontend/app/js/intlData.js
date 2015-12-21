@@ -25,7 +25,7 @@ module.exports = {
       "btc": {
         "maximumFractionDigits": 8
       },
-      "ether": {
+      "soil": {
         "maximumFractionDigits": 18
       }
     }
@@ -38,7 +38,7 @@ module.exports = {
     "available": "Available",
     "trading": "Trading",
     "last": "Last Price",
-    "price": "{price, number} {currency}/ETH",
+    "price": "{price, number} {currency}/SOIL",
     "trades": "Trades",
     "markets": "Markets",
     "amount": "Amount",
@@ -46,7 +46,7 @@ module.exports = {
     "by": "By",
     "network": "Network",
     "blocktime": "{time, number} s",
-    "ether": "{value, number} {unit}",
+    "soil": "{value, number} {unit}",
     "init": {
       "loading": "Ethereum loading...",
       "ready": "The Ethereum block chain is current. Just a few more seconds...",
@@ -195,11 +195,11 @@ module.exports = {
       "register": "Subcurrency registration",
       "code": "Subcurrency code",
       "contract": "Contract address",
-      "minimum": "Minimum ETH amount",
+      "minimum": "Minimum SOIL amount",
       "decimals": "Decimals",
       "precision": "Price precision",
       "confirm": `Are you sure you want to register {code} at address {address}
-        in the {category} section, with a minimum trade amount of {minimum} ETH,
+        in the {category} section, with a minimum trade amount of {minimum} SOIL,
         {decimals} decimals to the subcurrency and a price precision of {precision} ?`
     },
     "withdraw": {
@@ -224,20 +224,20 @@ module.exports = {
       "confirm": `Are you sure you want to {type, select,
                     buy {buy}
                     sell {sell}
-                  } {amount, number} {currency} at {price, number} {currency}/ETH for a maximum of {total, number} ETH?`,
+                  } {amount, number} {currency} at {price, number} {currency}/SOIL for a maximum of {total, number} SOIL?`,
       "adding": `You will be adding a new trade of {amount, number} {currency}
-                  at {price, number} {currency}/ETH for {total, number} ETH.`,
+                  at {price, number} {currency}/SOIL for {total, number} SOIL.`,
       "filling": `You will be filling
                   {numTrades, plural, =1 {one trade} other {# trades}}
-                  for a total of {total, number} ETH
+                  for a total of {total, number} SOIL
                   {left, plural,
                     =0 {}
-                    other {({balance, number} ETH left)}}.`,
+                    other {({balance, number} SOIL left)}}.`,
       "also_adding": `You will also be adding a new trade of {amount, number} {currency}
-                      at {price, number} {currency}/ETH for {total, number} ETH.`,
-      "not_left": `Not enough left for a new trade with {amount, number} for {total, number} ETH.`,
-      "minimum": `Minimum total is {minimum, number} ETH`,
-      "not_total": `Not enough ETH for this trade, {minimum, number} ETH required.`,
+                      at {price, number} {currency}/SOIL for {total, number} SOIL.`,
+      "not_left": `Not enough left for a new trade with {amount, number} for {total, number} SOIL.`,
+      "minimum": `Minimum total is {minimum, number} SOIL`,
+      "not_total": `Not enough SOIL for this trade, {minimum, number} SOIL required.`,
       "not_enough": `Not enough {currency} for this trade, {amount, number} {currency} required.`
     },
     "txs": {
@@ -247,7 +247,7 @@ module.exports = {
       "fromto": "From / To",
       "price": "Price",
       "amount": "Amount",
-      "totaleth": "Total ETH",
+      "totaleth": "Total SOIL",
       "details": "Details",
       "hash": "Hash",
       "id": "Trade ID"
@@ -257,7 +257,7 @@ module.exports = {
       "balances": "Balances",
       "not_found": "User not found",
       "address": "Current address",
-      "total": "Total value (ETH)",
+      "total": "Total value (SOIL)",
       "trades": "Open trades",
       "balance": `{balance, number} {currency}
                   {pending, plural,
@@ -267,14 +267,14 @@ module.exports = {
     },
     "btc": {
       "sell": `Are you sure you want to sell {amount} {unit}
-               for {total} BTC at a price of {price} ETH/BTC,
+               for {total} BTC at a price of {price} SOIL/BTC,
                paid to {address} ?`,
       "reserve": `Are you sure you want to reserve ticket # {id, number} at
                   {amount} {unit} for {total} BTC at a price of
-                  {price} ETH/BTC, paid to {address} ?`,
+                  {price} SOIL/BTC, paid to {address} ?`,
       "claim": `Are you sure you want to claim ticket # {id, number} at
                   {amount} {unit} for {total} BTC at a price of
-                  {price} ETH/BTC, paid to {address} ?`,
+                  {price} SOIL/BTC, paid to {address} ?`,
       "behind": `BTC relay headers are behind by
                 {behind, plural,
                   =1 {# block}

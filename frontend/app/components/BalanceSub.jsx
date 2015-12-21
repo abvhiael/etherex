@@ -76,7 +76,7 @@ let BalanceSub = injectIntl(React.createClass({
             <h4 className="hidden-xs">
               { this.props.user.user.balanceFormatted &&
                 <FormattedMessage
-                  id='ether'
+                  id='soil'
                   values={{
                     value: this.props.user.user.balanceFormatted.value,
                     unit: this.props.user.user.balanceFormatted.unit

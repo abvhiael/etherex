@@ -36,7 +36,7 @@ let TxRow = injectIntl(React.createClass({
         </td>
         <td>
           <div className="text-right">
-            <FormattedMessage id='ether' values={{
+            <FormattedMessage id='soil' values={{
                 value: amount,
                 unit: this.props.market.name
               }}
@@ -53,7 +53,7 @@ let TxRow = injectIntl(React.createClass({
         <td>
           <div className="text-right">
             { this.props.tx.total.value ?
-                <FormattedMessage id='ether' values={{
+                <FormattedMessage id='soil' values={{
                     value: this.props.tx.total.value,
                     unit: this.props.tx.total.unit
                   }}

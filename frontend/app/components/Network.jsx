@@ -109,12 +109,12 @@ let Network = injectIntl(React.createClass({
                   /> : 'off' }
             </span>
           </p>
-          <p className="ether">
-            <span className="network-label">Ether</span>
+          <p className="soil">
+            <span className="network-label">Soil</span>
             <span className="pull-right">
               { this.state.user.balance ?
                 <span>
-                  <FormattedMessage id='ether' values={{
+                  <FormattedMessage id='soil' values={{
                       value: this.state.user.balanceFormatted.value,
                       unit: this.state.user.balanceFormatted.unit
                     }}

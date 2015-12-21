@@ -125,7 +125,7 @@ let TradeRow = React.createClass({
         </td>
         <td>
           <div className="text-right text-overflow">
-            <FormattedNumber value={this.props.trade.total} /> ETH
+            <FormattedNumber value={this.props.trade.total} /> SOIL
           </div>
         </td>
         <td className="trade-op">

@@ -1,10 +1,10 @@
 var fixtures = {
   favicon: 'data:image/x-icon;base64,AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA///////////8AAA//AAAP/wAAD///////////////////////////////////////////////////////4AA//+AAP//gAD//////////////////////////////////////////////////gAAf/4AAH/+AAB///////////8=',
   host: 'localhost:8545',
-  ether: "1000000000000000000",
+  soil: "1000000000000000000",
   addresses: {
       // nameregs: ["0xb46312830127306cd3de3b84dbdb51899613719d", "0xda7ce79725418f4f6e13bf5f520c89cec5f6a974"],
-      etherex: "0xe55c0e37ae260fa77fa15077bc30d4de972b76ed",
+      etherex: "0x1fcfdcd9788747972314136cad1961b97a0b716b",
       btcswap: "0x874d563dd0cf5897dec18a9e119a4950faef65a2"
   },
   categories: [
@@ -96,7 +96,7 @@ var fixtures = {
             "price": 0.24,
             "total": {
               "value": 24,
-              "unit": "ether"
+              "unit": "soil"
             },
             "details": "+"
           },
@@ -113,7 +113,7 @@ var fixtures = {
             "price": 0.3,
             "total": {
               "value": 75,
-              "unit": "ether"
+              "unit": "soil"
             },
             "details": "+"
           },
@@ -130,7 +130,7 @@ var fixtures = {
             "price": 0.32,
             "total": {
               "value": 80,
-              "unit": "ether"
+              "unit": "soil"
             },
             "details": "+"
           },
@@ -147,7 +147,7 @@ var fixtures = {
             "price": 0.25,
             "total": {
               "value": 62.5,
-              "unit": "ether"
+              "unit": "soil"
             },
             "details": "+"
           },
@@ -164,7 +164,7 @@ var fixtures = {
             "price": 0.24,
             "total": {
               "value": 24,
-              "unit": "ether"
+              "unit": "soil"
             },
             "details": "+"
           },
@@ -181,7 +181,7 @@ var fixtures = {
             "price": 0.23,
             "total": {
               "value": 17.25,
-              "unit": "ether"
+              "unit": "soil"
             },
             "details": "+"
           },
@@ -198,7 +198,7 @@ var fixtures = {
             "price": 0.26,
             "total": {
               "value": 91,
-              "unit": "ether"
+              "unit": "soil"
             },
             "details": "+"
           },
@@ -215,7 +215,7 @@ var fixtures = {
             "price": 0.24,
             "total": {
               "value": 12,
-              "unit": "ether"
+              "unit": "soil"
             },
             "details": "+"
           },
@@ -232,7 +232,7 @@ var fixtures = {
             "price": 0.21,
             "total": {
               "value": 10.5,
-              "unit": "ether"
+              "unit": "soil"
             },
             "details": "+"
           },
@@ -249,7 +249,7 @@ var fixtures = {
             "price": 0.22,
             "total": {
               "value": 11,
-              "unit": "ether"
+              "unit": "soil"
             },
             "details": "+"
           },
@@ -266,7 +266,7 @@ var fixtures = {
             "price": 0.32,
             "total": {
               "value": 80,
-              "unit": "ether"
+              "unit": "soil"
             },
             "details": "+"
           },
@@ -283,7 +283,7 @@ var fixtures = {
             "price": 0.23,
             "total": {
               "value": 11.5,
-              "unit": "ether"
+              "unit": "soil"
             },
             "details": "+"
           },
@@ -300,7 +300,7 @@ var fixtures = {
             "price": 0.28,
             "total": {
               "value": 154,
-              "unit": "ether"
+              "unit": "soil"
             },
             "details": "+"
           },
@@ -317,7 +317,7 @@ var fixtures = {
             "price": 0.26,
             "total": {
               "value": 91,
-              "unit": "ether"
+              "unit": "soil"
             },
             "details": "+"
           },
@@ -334,7 +334,7 @@ var fixtures = {
             "price": 0.27,
             "total": {
               "value": 121.5,
-              "unit": "ether"
+              "unit": "soil"
             },
             "details": "+"
           },
@@ -351,7 +351,7 @@ var fixtures = {
             "price": 0.25,
             "total": {
               "value": 37.5,
-              "unit": "ether"
+              "unit": "soil"
             },
             "details": "+"
           },
@@ -368,7 +368,7 @@ var fixtures = {
             "price": 0.25,
             "total": {
               "value": 12.5,
-              "unit": "ether"
+              "unit": "soil"
             },
             "details": "+"
           },
@@ -385,7 +385,7 @@ var fixtures = {
             "price": 0.3,
             "total": {
               "value": 75,
-              "unit": "ether"
+              "unit": "soil"
             },
             "details": "+"
           }
@@ -971,7 +971,7 @@ var fixtures = {
               "price": 0.24,
               "total": {
                 "value": 24,
-                "unit": "ether"
+                "unit": "soil"
               },
               "details": "+"
             },
@@ -988,7 +988,7 @@ var fixtures = {
               "price": 0.3,
               "total": {
                 "value": 75,
-                "unit": "ether"
+                "unit": "soil"
               },
               "details": "+"
             },
@@ -1005,7 +1005,7 @@ var fixtures = {
               "price": 0.32,
               "total": {
                 "value": 80,
-                "unit": "ether"
+                "unit": "soil"
               },
               "details": "+"
             },
@@ -1022,7 +1022,7 @@ var fixtures = {
               "price": 0.25,
               "total": {
                 "value": 62.5,
-                "unit": "ether"
+                "unit": "soil"
               },
               "details": "+"
             },
@@ -1039,7 +1039,7 @@ var fixtures = {
               "price": 0.24,
               "total": {
                 "value": 24,
-                "unit": "ether"
+                "unit": "soil"
               },
               "details": "+"
             },
@@ -1056,7 +1056,7 @@ var fixtures = {
               "price": 0.23,
               "total": {
                 "value": 17.25,
-                "unit": "ether"
+                "unit": "soil"
               },
               "details": "+"
             },
@@ -1073,7 +1073,7 @@ var fixtures = {
               "price": 0.26,
               "total": {
                 "value": 91,
-                "unit": "ether"
+                "unit": "soil"
               },
               "details": "+"
             },
@@ -1090,7 +1090,7 @@ var fixtures = {
               "price": 0.24,
               "total": {
                 "value": 12,
-                "unit": "ether"
+                "unit": "soil"
               },
               "details": "+"
             },
@@ -1107,7 +1107,7 @@ var fixtures = {
               "price": 0.21,
               "total": {
                 "value": 10.5,
-                "unit": "ether"
+                "unit": "soil"
               },
               "details": "+"
             },
@@ -1124,7 +1124,7 @@ var fixtures = {
               "price": 0.22,
               "total": {
                 "value": 11,
-                "unit": "ether"
+                "unit": "soil"
               },
               "details": "+"
             },
@@ -1141,7 +1141,7 @@ var fixtures = {
               "price": 0.32,
               "total": {
                 "value": 80,
-                "unit": "ether"
+                "unit": "soil"
               },
               "details": "+"
             },
@@ -1158,7 +1158,7 @@ var fixtures = {
               "price": 0.23,
               "total": {
                 "value": 11.5,
-                "unit": "ether"
+                "unit": "soil"
               },
               "details": "+"
             },
@@ -1175,7 +1175,7 @@ var fixtures = {
               "price": 0.28,
               "total": {
                 "value": 154,
-                "unit": "ether"
+                "unit": "soil"
               },
               "details": "+"
             },
@@ -1192,7 +1192,7 @@ var fixtures = {
               "price": 0.26,
               "total": {
                 "value": 91,
-                "unit": "ether"
+                "unit": "soil"
               },
               "details": "+"
             },
@@ -1209,7 +1209,7 @@ var fixtures = {
               "price": 0.27,
               "total": {
                 "value": 121.5,
-                "unit": "ether"
+                "unit": "soil"
               },
               "details": "+"
             },
@@ -1226,7 +1226,7 @@ var fixtures = {
               "price": 0.25,
               "total": {
                 "value": 37.5,
-                "unit": "ether"
+                "unit": "soil"
               },
               "details": "+"
             },
@@ -1243,7 +1243,7 @@ var fixtures = {
               "price": 0.25,
               "total": {
                 "value": 12.5,
-                "unit": "ether"
+                "unit": "soil"
               },
               "details": "+"
             },
@@ -1260,7 +1260,7 @@ var fixtures = {
               "price": 0.3,
               "total": {
                 "value": 75,
-                "unit": "ether"
+                "unit": "soil"
               },
               "details": "+"
             }
@@ -1669,7 +1669,7 @@ var fixtures = {
         "balance": 3866.53390136035,
         "balanceFormatted": {
           "value": 3.8665339013603495,
-          "unit": "Kether"
+          "unit": "Ksoil"
         },
         "balancePending": 0,
         "balanceSub": 0,
