@@ -11,7 +11,7 @@ var ConfigStore = Fluxxor.createStore({
     this.ethereumClient = null;
     this.btcSwapAddress = fixtures.addresses.btcswap;
     this.btcSwapClient = null;
-    this.storeBlockFee = 10000000000000000; // 0.01 ETH =~ storing 1 block
+    this.storeBlockFee = 10000000000000000; // 0.01 SOIL =~ storing 1 block
     this.debug = false;
     this.debugHandler = null;
     this.demoMode = false;

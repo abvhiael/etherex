@@ -97,7 +97,7 @@ let SubRegister = injectIntl(React.createClass({
         !precision ||
         !category)
       message = this.props.intl.formatMessage({id: 'form.empty'});
-    else if (code == 'ETH' || this.props.address == address)
+    else if (code == 'SOIL' || this.props.address == address)
       message = "Nice try.";
     else if (code.length < 3 || code.length > 4)
       message = "Subcurrency code too " + (code.length < 3 ? "short" : "long") + ".";

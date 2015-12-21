@@ -37,7 +37,7 @@ let MarketRow = React.createClass({
         </td>
         <td>
           <div className="text-right">
-              {this.props.market.name}/ETH
+              {this.props.market.name}/SOIL
           </div>
         </td>
         <td>

@@ -374,7 +374,7 @@ let TradeFormInstance = injectIntl(React.createClass({
           min={this.props.market.market.pricePrecision} step={this.props.market.market.pricePrecision}
           onChange={this.handleChange}
           value={this.state.price}
-          addonAfter={(this.props.market.market.name ? this.props.market.market.name : "...") + "/ETH"}
+          addonAfter={(this.props.market.market.name ? this.props.market.market.name : "...") + "/SOIL"}
          />
 
        <Input type="number" ref="total" className="form-control medium" wrapperClassName="col-md-9"
@@ -383,7 +383,7 @@ let TradeFormInstance = injectIntl(React.createClass({
           min={this.props.market.market.minimumTotal} step={this.props.market.market.amountPrecision}
           onChange={this.handleChangeTotal}
           value={this.state.total}
-          addonAfter="ETH"
+          addonAfter="SOIL"
         />
 
         <div className="form-group">

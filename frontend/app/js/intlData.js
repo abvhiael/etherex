@@ -84,7 +84,7 @@ module.exports = {
         "Win": {
           "install": `Download the
                         <a href="https://build.ethdev.com/builds/Windows%20Go%20develop%20branch/Geth-Win64-latest.zip">
-                          lastest geth build
+                          lastest gsoil build
                         </a>
                       for Windows`,
           "link": `See also the <a href="{wiki}" target="_blank">Wiki page</a>
@@ -97,9 +97,9 @@ module.exports = {
                       </a>
                     on GitHub`
         },
-        "installed": `Once <pre className="small">geth</pre> is installed:`,
-        "account": `Add a new account using: { geth }`,
-        "start": `Start geth with: { geth }`
+        "installed": `Once <pre className="small">gsoil</pre> is installed:`,
+        "account": `Add a new account using: { gsoil }`,
+        "start": `Start gsoil with: { gsoil }`
       },
       "block": {
         "age": "Last block was {age}.",

@@ -39,7 +39,7 @@ var UserActions = function() {
       // Update balance after loading addresses TODO all addresses
       this.flux.actions.user.updateBalance();
 
-      // Watch blocks to update the user's ETH balance
+      // Watch blocks to update the user's SOIL balance
       var user = this.flux.store("UserStore").getState().user;
       _client.watchAddress(user.id);
 

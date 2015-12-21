@@ -121,7 +121,7 @@ var Tickets = React.createClass({
             <tr>
               <th className="text-right">ID</th>
               <th className="text-right">AMOUNT</th>
-              <th className="text-right">PRICE BTC/ETH</th>
+              <th className="text-right">PRICE BTC/SOIL</th>
               <th className="text-right">TOTAL</th>
               <th className="text-center">BTC ADDRESS</th>
               <th className="text-center">BY</th>

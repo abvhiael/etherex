@@ -118,7 +118,7 @@ var EthereumClient = function(params) {
       trailing: true
     });
 
-    // ETH balance
+    // SOIL balance
     this.filters.address = web3.eth.filter('latest').watch(updateBalance);
   };
 
@@ -253,7 +253,7 @@ var EthereumClient = function(params) {
       success(accounts);
     }
     catch (e) {
-      // reject("Unable to load addresses, are you running an Ethereum node? Please load this URL in Mist, AlethZero, or with a geth/eth node running with JSONRPC enabled.");
+      // reject("Unable to load addresses, are you running an Ethereum node? Please load this URL in Mist, AlethZero, or with a gsoil/eth node running with JSONRPC enabled.");
       utils.error(e);
       failure("Error loading accounts: " + String(e));
     }
@@ -1111,7 +1111,7 @@ var EthereumClient = function(params) {
           return;
         }
         if (!result) {
-          failure("No transaction hash, ETH transfer probably failed.");
+          failure("No transaction hash, SOIL transfer probably failed.");
           return;
         }
         success(result);

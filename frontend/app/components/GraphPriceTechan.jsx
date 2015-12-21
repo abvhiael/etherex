@@ -242,7 +242,7 @@ let TechanChart = React.createClass({
                 .attr("class", "symbol")
                 .attr("x", 10)
                 .attr("y", 10)
-                .text(this.props.market.name ? this.props.market.name + "/ETH" : "loading...");
+                .text(this.props.market.name ? this.props.market.name + "/SOIL" : "loading...");
 
         svg.append("g")
                 .attr("class", "x axis")
@@ -479,7 +479,7 @@ let TechanChart = React.createClass({
         if (nextProps.data.length != this.props.data.length) {
           if (nextProps.market.name) {
             var svg = d3.select(ReactDOM.findDOMNode(this.refs.chart));
-            svg.select('text.symbol').text(nextProps.market.name + "/ETH");
+            svg.select('text.symbol').text(nextProps.market.name + "/SOIL");
           }
 
           if (nextProps.data.length > 33)

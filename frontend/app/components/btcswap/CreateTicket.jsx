@@ -58,7 +58,7 @@ let CreateTicket = injectIntl(React.createClass({
         confirmMessage: <FormattedMessage id='btc.sell'
                           values={{
                             amount: this.state.amount,
-                            unit: "ETH",
+                            unit: "SOIL",
                             total: this.state.btc,
                             price: this.state.price,
                             address: this.state.address
@@ -140,17 +140,17 @@ let CreateTicket = injectIntl(React.createClass({
                   min="0.000000000000000001" step="0.000000000000000001"
                   value={this.state.amount}
                   onChange={this.handleChange}
-                  help="How many ETH you are offering for BTC" />
+                  help="How many SOIL you are offering for BTC" />
 
                 <Input type="number" ref="btc" label="Bitcoin amount" className="form-control"
                   min="0.00000001" step="0.00000001"
                   value={this.state.btc}
                   onChange={this.handleChange}
-                  help="Total amount of BTC you are offering for your ETH" />
+                  help="Total amount of BTC you are offering for your SOIL" />
 
-                <Input type="number" ref="price" label="Price ETH/BTC" className="form-control" readOnly
+                <Input type="number" ref="price" label="Price SOIL/BTC" className="form-control" readOnly
                   value={this.state.price}
-                  help="Effectively how many BTC you are asking for each ETH" />
+                  help="Effectively how many BTC you are asking for each SOIL" />
 
                 <Button className={"btn-block" + (this.state.isValid ? " btn-primary" : "")}
                   type="submit"

@@ -14,7 +14,7 @@ let UserBalances = React.createClass({
           <div className="account-row underline clearfix">
             <div className="clearfix">
               <div className="pull-left">
-                ETH
+                SOIL
               </div>
               <div className="pull-right">
                 <FormattedNumber value={ this.props.user.balance } />

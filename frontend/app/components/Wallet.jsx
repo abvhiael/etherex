@@ -88,7 +88,7 @@ let Wallet = injectIntl(React.createClass({
       <div className="panel panel-default">
         <div className="panel-heading">
           <h3 className="panel-title">
-            <FormattedMessage id='send.currency' values={{currency: "ETH"}} />
+            <FormattedMessage id='send.currency' values={{currency: "SOIL"}} />
           </h3>
         </div>
         <div className="panel-body">
@@ -117,7 +117,7 @@ let Wallet = injectIntl(React.createClass({
             <Tab eventKey={3} title={ this.props.intl.formatMessage({id: 'send.currency'}, {currency: this.props.market.market.name}) }>
               { this.transfer() }
             </Tab>
-            <Tab eventKey={4} title={ this.props.intl.formatMessage({id: 'send.currency'}, {currency: "ETH"}) }>
+            <Tab eventKey={4} title={ this.props.intl.formatMessage({id: 'send.currency'}, {currency: "SOIL"}) }>
               { this.sendEther() }
             </Tab>
           </Tabs>

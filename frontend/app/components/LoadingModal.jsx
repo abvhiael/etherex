@@ -33,9 +33,9 @@ let LoadingModal = React.createClass({
       <FormattedMessage
         id='init.install.start'
         values={{
-          geth:
+          gsoil:
             <div>
-              <pre className="small">geth --testnet --rpc --rpccorsdomain { this.state.host }</pre>
+              <pre className="small">gsoil --testnet --rpc --rpccorsdomain { this.state.host }</pre>
               Optionally add <samp>--unlock {"<YourAddress>"}</samp> to unlock an account.
             </div>
         }}
@@ -59,7 +59,7 @@ let LoadingModal = React.createClass({
     steps.push(<FormattedMessage
                 id='init.install.account'
                 values={{
-                  geth: <pre className="small">geth account new</pre>
+                  gsoil: <pre className="small">gsoil account new</pre>
                 }}
               />);
     steps.push(launchStep);
@@ -85,7 +85,7 @@ let LoadingModal = React.createClass({
                     id='init.install.Win.link'
                     values={{
                       wiki: "https://github.com/ethereum/go-ethereum/wiki/Installation-instructions-for-Windows",
-                      choco: "https://chocolatey.org/packages/geth-stable"
+                      choco: "https://chocolatey.org/packages/gsoil-stable"
                     }}
                   />);
 

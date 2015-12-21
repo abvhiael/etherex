@@ -12,7 +12,7 @@ let Balance = React.createClass({
                 <span className="text-orange">
                   <FormattedNumber value={ this.props.user.user.balanceSub } />
                 </span> { this.props.market.market.name }{' / '}
-                <span className="text-light">{ this.props.user.user.balance } ETH</span>
+                <span className="text-light">{ this.props.user.user.balance } SOIL</span>
               </div>
             </Popover>} >
           <span>

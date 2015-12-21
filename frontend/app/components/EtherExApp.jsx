@@ -186,7 +186,7 @@ let EtherExApp = React.createClass({
                                 Network ID { this.state.config.network }
                               </Popover>}>
                               <div className="pull-right">
-                                <Button bsStyle="warning" bsSize="xsmall">TESTNET</Button>
+                                <Button bsStyle="warning" bsSize="xsmall">SOILNET</Button>
                               </div>
                             </OverlayTrigger> }
                           { this.state.config.demoMode &&

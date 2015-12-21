@@ -66,7 +66,7 @@ let BalanceSub = injectIntl(React.createClass({
               <Popover id="balance-pending-popover">
                 <div className="text-overflow">
                   { formatMessage({id: 'wallet.pending'}, {
-                      currency: "ETH",
+                      currency: "SOIL",
                       balance: this.props.user.user.balance,
                       pending: this.props.user.user.balancePending
                     })
