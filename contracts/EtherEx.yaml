@@ -1,7 +1,10 @@
-# Package Name:       EtherEx
-# Package Author:     caktux
-# Package Email:      caktux@etherex.org
-# Package Repository: https://github.com/etherex/etherex
+# Package Name:       EtherEx on SOILcoin
+# EtherEx Package Author:     caktux 
+# EtherEx Package Email: caktux@etherex.org
+# EtherEx Package Repository: https://github.com/etherex/etherex
+# SOIL-ex porting: abvhiael
+# SOIL-ex package email: abvhiael@live.ca
+# SOIL-ex package repository: https://github.com/abvhiael/etherex
 
 # Set some variables.
 -
