@@ -1,11 +1,11 @@
-EtherEx
+SOIL-ex
 =======
 [![Build Status](https://travis-ci.org/etherex/etherex.svg?branch=master)](https://travis-ci.org/etherex/etherex)
 [![Dependency Status](https://david-dm.org/etherex/etherex.svg?path=frontend)](https://david-dm.org/etherex/etherex?path=frontend)
 [![devDependency Status](https://david-dm.org/etherex/etherex/dev-status.svg?path=frontend)](https://david-dm.org/etherex/etherex?path=frontend#info=devDependencies)
 [![SlackIn](http://slack.etherex.org/badge.svg)](http://slack.etherex.org) [![Join the chat at https://gitter.im/etherex/etherex](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/etherex/etherex?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Decentralized exchange built on Ethereum.
+Decentralized asset exchange built on SOILcoin, forked from EtherEx.
 
 <img src="/frontend/screenshot.png" />
 
@@ -38,7 +38,7 @@ Installation
 Start by cloning this repository.
 
 ```
-git clone https://github.com/etherex/etherex.git
+git clone https://github.com/abvhiael/etherex.git
 ```
 
 
@@ -78,6 +78,17 @@ Requires a local client (Go or C++) with JSONRPC, [Serpent](https://github.com/e
 ```
 cd contracts
 pyepm EtherEx.yaml
+```
+
+***I've found, with SOILcoin, the best method of deploying the contracts is to launch gsoil.exe with the command line, to open an RPC connection, where 127.0.0.1 would be your locally hosted copy of SOIL-ex, or another server address would be a server hosted copy of the SOIL-ex front end.
+```
+gsoil --rpc --rpccorsdomain http://127.0.0.1:8089 --unlock 0 console
+```
+
+Deploying the contract .yaml file using pyepm in the code above resulted in a lot of failed compiling. I suggest using the following, replacing your wallet address that is being used to deploy the contracts:
+
+```
+pyepm EtherEx.yaml -a 0x012345
 ```
 
 
@@ -173,22 +184,26 @@ The subcurrency's decimal precision as an integer.
 * Denominator for price precision, ex. 10000 (10000 => 1 / 10000 => 0.0001)
 
 #### Minimum trade total
-When adding a subcurrency, set the minimum trade total high enough to make economic sense. A minimum of 10 ETH (1000000000000000000000 wei) is recommended.
+When adding a subcurrency, set the minimum trade total high enough to make economic sense. A minimum of 1 SOIL (100000000000000000000 wei) is recommended.
 
 #### Categories
 ```
 1 = Subcurrencies
 2 = Crypto-currencies
-3 = Real-world assets
+3 = Real-world assets 
 4 = Fiat currencies
 ```
-EtherEx allows you to categorize your subcurrency into four main categories. Since everything is represented as subcurrencies, those categories are simply for convenience. If you have a DApp that has its own token, that would go in the regular subcurrency section `1`. If your token represents a fiat currency redeemable at a gateway, add it to `4`. If your token represents a real-world asset like gold or a car, add it to `3`. For other crypto-currencies like BTC, also redeemable at a gateway, add it to `2`.
+SOIL-ex will allows you to categorize your assets into four main categories. Since everything is presently represented as subcurrencies, those categories are simply for convenience, and will be better enabled as we scale further towards full decentralized cryptocurrency exchange ability. 
+If you have a privtely issued token, DAO issued share, etc, that would go in the regular subcurrency section `1`. 
+For other crypto-currencies like BTC, ETH, or DOGE redeemable through a gateway, add it to `2`. 
+If your token represents a real-world asset or commodity like gold, minerals, etc. add it to `3`.
+If your token represents a fiat currency redeemable through a gateway, add it to `4`.  
 
 #### Market IDs
 ```
-1 = ETX/ETH
+1 = DEV/SOIL
 ```
-New market IDs will be created as DAO creators add their subcurrency to the exchange.
+New market IDs will be created as DAO creators and token administrators add their subcurrency to the exchange.
 
 
 ### Subcurrency API
@@ -200,13 +215,12 @@ See the example [ETX](https://github.com/etherex/etherex/blob/master/contracts/e
 After registering the subcurrency using the `add_market` ABI call, the subcurrency will receive a `market_id`. You can retrieve the market ID with a call to `get_market_id(contract_address)`.
 
 #### Deposit support
-**IMPORTANT: The original `deposit` technique has been deprecated in favor of the [Standardized Contract APIs](https://github.com/ethereum/wiki/wiki/Standardized_Contract_APIs)**
 
 To support deposits to EtherEx, your subcurrency needs to implement the `approve` and `transferFrom` methods. The former allows a one-time transfer from the user's address by the exchange's contract, while the latter is called from the contract to effectively make that transfer when the user calls the exchange's new `deposit` method. This allows to securely send a subcurrency's tokens to the exchange's contract while updating the user's available balance at the exchange.
 
 #### Withdrawal support
 
-If your subcurrency's default method for transferring funds is also named `transfer` like the standard examples above, with the `_to` and `_value` parameters (in that order), then there is nothing else you need to do to support withdrawals from EtherEx to a user's address. Otherwise, you'll need to implement that same `transfer` method with those two parameters, and "translate" that method call to yours, calling your other method with those parameters, in the order they're expected. You may also have to use `tx.origin` instead of `msg.sender` in your method as the latter will return your contract's address.
+If your subcurrency's default method for transferring funds is also named `transfer` like the standard examples above, with the `_to` and `_value` parameters (in that order), then there is nothing else you need to do to support withdrawals from SOIL-ex to a user's address. Otherwise, you'll need to implement that same `transfer` method with those two parameters, and "translate" that method call to yours, calling your other method with those parameters, in the order they're expected. You may also have to use `tx.origin` instead of `msg.sender` in your method as the latter will return your contract's address.
 
 ```
 def transfer(_to, _value):
@@ -225,41 +239,25 @@ def balanceOf(_addr):
 
 Accounts
 -----
-* Your Ethereum address is used as your identity
+* Your SOILcoin address is used as your identity
 
 
-TODO
-----
+TODO LIST
+---------
 
 ### Architecture
 
-* Document error codes of return values
-* Implement Wallet section (transactions, balances, etc.) (in progress)
-* Re-implement NameReg support and integration
-* Start the Tools section, find and list ideas
-    - subcurrency registration (in progress)
-    - subcurrency creation tools/wizard
-    - raw transact (?)
-    - trading tools (...)
-    - ...
-* Use [NatSpec](https://github.com/ethereum/wiki/wiki/Ethereum-Natural-Specification-Format)
-* Look into how [Whisper](https://github.com/ethereum/wiki/wiki/Whisper-Overview) and [Swarm](https://github.com/ethereum/cpp-ethereum/wiki/Swarm) could be used and integrated
-* Start working on X-Chain
-* Update this TODO more frequently
-* Start using GitHub issues instead
-* Better, rock solid tests, and way more of them
-* Total unilateral world takeover
+- Solidify btc-swap usage, investigate how to apply to cross chain assets
+- Implement SchellingCoin-based pegged commodities
+- Implement deeper market analysis tools.
+
 
 ### UX/UI
 
 * Graphs, beautiful graphs
 * Advanced trading features (stoploss, etc.)
-* Animations/transitions
-* Check/clear buttons
 * Wallet design and theming
-* More/new mockups / wireframes
-* More/new design elements
-* Implement new mockups / design elements
+* Enable category drop downs.
 
 
 ## License
