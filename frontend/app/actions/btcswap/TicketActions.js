@@ -222,7 +222,7 @@ let TicketActions = function() {
         }
         else {
           etherAddr = 'INVALID';
-          error = 'Invalid Ethereum address:';
+          error = 'Invalid SOILcoin address:';
           this.dispatch(constants.ticket.LOOKUP_TICKET_FAIL, {error: error + " " + tx1Script});
           utils.error(error, tx1Script);
         }
