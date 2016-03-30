@@ -248,7 +248,7 @@ var EthereumClient = function(params) {
       var accounts = web3.eth.accounts;
 
       if (!accounts || accounts.length === 0)
-        failure("No accounts were found on this Ethereum node.");
+        failure("No accounts were found on this SOILcoin node.");
 
       success(accounts);
     }
@@ -1607,7 +1607,7 @@ var EthereumClient = function(params) {
   this.postMessage = function(market, message, success, failure) {
     var post = {
       from: this.identity,
-      topics: ['EtherEx', market],
+      topics: ['SOIL-ex', market],
       payload: message,
       priority: 100,
       ttl: 120
@@ -1628,7 +1628,7 @@ var EthereumClient = function(params) {
 
   this.watchMessages = function(market, success, failure) {
     this.filters.whisper = web3.shh.filter({
-      topics: ['EtherEx', market]
+      topics: ['SOIL-ex', market]
     }).watch( function(error, result) {
       if (error) {
         utils.error(error);
