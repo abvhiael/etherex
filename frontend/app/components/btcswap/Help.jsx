@@ -17,15 +17,15 @@ let Help = React.createClass({
           <ol>
             <li>
               <Link to="btc">Choose the ticket</Link> you want to purchase
-              ether from and click the <b>Reserve</b> button for that ticket.
+              SOIL from and click the <b>Reserve</b> button for that ticket.
             </li>
             <li>
               Generate an intermediate BTC wallet in the Reserve section by
               clicking on the <b>Generate wallet</b> button.
             </li>
             <li>
-              Send the total BTC amount of the ticket plus a 0.3mBTC miner fee
-              to your intermediate address. You can still recover your bitcoins
+              Send the total BTC amount of the ticket plus a 0.0003 BTC miner fee
+              to your intermediate address. You can still recover your bitcoin
               if you change your mind later on, at least until you broadcast
               the transaction you'll generate on step 5.
             </li>
@@ -58,14 +58,14 @@ let Help = React.createClass({
           <h4>Notes:</h4>
           <ul>
             <li>
-              A ticket is exclusively reserved for 2 hours; afterwards, anyone with ether
-              can Claim the ticket (thus getting the ether fee).  If a further 2 hours
+              A ticket is exclusively reserved for 2 hours; afterwards, anyone with SOILcoin
+              can Claim the ticket (thus getting the SOIL fee).  If a further 2 hours
               elapses without the ticket being claimed, the ticket becomes open for
               someone else to Reserve.
             </li>
             <li>
-              If you do not have any ether already, you will need to provide the Bitcoin
-              transaction hash (only the hash) and Proof of Work, to a 3rd party who has ether
+              If you do not have any SOILcoin already, you will need to provide the Bitcoin
+              transaction hash (only the hash) and Proof of Work, to a 3rd party who has SOIL
               and can Reserve a ticket for you.  Once the ticket is reserved, broadcast your
               Bitcoin transaction and then inform the 3rd party to Claim the ticket on your
               behalf.  If the 3rd party doesn't Claim within 2 hours of the reservation,
