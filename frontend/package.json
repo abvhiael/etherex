@@ -1,7 +1,7 @@
 {
-  "name": "EtherEx",
-  "version": "0.9.10",
-  "description": "EtherEx frontend",
+  "name": "SOIL-ex",
+  "version": "1.0",
+  "description": "SOIL-ex frontend",
   "main": "app/app.jsx",
   "scripts": {
     "build": "grunt build",
@@ -14,19 +14,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/etherex/etherex.git"
+    "url": "https://github.com/abvhiael/etherex/etherex.git"
   },
   "keywords": [
-    "Ethereum",
-    "EtherEx"
+    "SOILcoin",
+    "SOIL-ex"
   ],
-  "author": "caktux <caktux@gmail.com>",
+  "author": "abvhiael <abvhiael@live.ca>",
   "license": "MIT",
   "private": true,
   "bugs": {
-    "url": "https://github.com/etherex/etherex/issues"
+    "url": "https://github.com/abvhiael/etherex/issues"
   },
-  "homepage": "https://github.com/etherex/etherex",
+  "homepage": "https://github.com/abvhiael/etherex",
   "devDependencies": {
     "babel-core": "^6.3.17",
     "babel-loader": "^6.2.0",
