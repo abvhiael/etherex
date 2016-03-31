@@ -125,7 +125,7 @@ let CreateTicket = injectIntl(React.createClass({
           <div className="panel panel-default">
             <div className="panel-heading">
               <h3 className="panel-title">
-                Offer your ether for bitcoin
+                Offer your SOILcoin for Bitcoin
               </h3>
             </div>
             <div className="panel-body">
@@ -136,7 +136,7 @@ let CreateTicket = injectIntl(React.createClass({
                   onChange={this.handleChange}
                   help="Address where you want to receive bitcoins" />
 
-                <Input type="number" ref="amount" label="Ether amount" className="form-control"
+                <Input type="number" ref="amount" label="SOIL amount" className="form-control"
                   min="0.000000000000000001" step="0.000000000000000001"
                   value={this.state.amount}
                   onChange={this.handleChange}
