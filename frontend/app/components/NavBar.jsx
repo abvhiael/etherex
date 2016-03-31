@@ -9,7 +9,7 @@ let NavBar = injectIntl(React.createClass({
       <Navbar id="side-nav" role="navigation" aria-label="Primary" fluid>
         <Nav stacked className="row">
           <li id="logo">
-            <Link to="/" className="row"><span title="#EtherEx"/></Link>
+            <Link to="/" className="row"><span title="SOIL-ex"/></Link>
           </li>
           <li>
             <Link to="/trades" activeClassName="active">
