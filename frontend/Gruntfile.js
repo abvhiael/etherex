@@ -34,14 +34,14 @@ module.exports = function(grunt) {
       },
       start: {
         keepAlive: true,
-        port: 8089,
+        port: 7105,
         contentBase: "app",
         hot: true,
         webpack: {
           devtool: "eval",
           debug: true,
           entry: webpackConfig.entry.concat(
-            "webpack-dev-server/client?http://localhost:8089",
+            "webpack-dev-server/client?http://localhost:7105",
             "webpack/hot/dev-server"
           ),
           plugins: webpackConfig.plugins.concat(
@@ -81,7 +81,7 @@ module.exports = function(grunt) {
     "gh-pages": {
       options: {
         base: 'app',
-        repo: 'git@github.com:etherex/etherex.git'
+        repo: 'git@github.com:abvhiael/etherex.git'
       },
       src: ['index.html', 'app.js', '*.svg', '*.woff', '*.woff2', '*.eot', '*.ttf', '*.ico', '*.jpg', '*.png']
     },
