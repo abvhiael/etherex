@@ -184,7 +184,7 @@ let ClaimTicket = injectIntl(React.createClass({
               </div>
               <div className="panel-body">
                 <p>Amount: <b>{ this.state.ticket.formattedAmount.value } { this.state.ticket.formattedAmount.unit }</b></p>
-                <p className="text-overflow">Price: <b>{ this.state.ticket.price ? this.state.ticket.price + " BTC/SOIL" : ""} </b></p>
+                <p className="text-overflow">Price: <b>{ this.state.ticket.price ? this.state.ticket.price + " BTC/ETH" : ""} </b></p>
                 <p className="text-overflow">Total BTC: <b>{ this.state.ticket.total ? this.state.ticket.total + " BTC" : "" }</b></p>
                 <p className="text-overflow">Total with fee: <b>{ this.state.ticket.totalWithFee ? this.state.ticket.totalWithFee + " BTC" : "" }</b></p>
                 <p className="text-overflow">Bitcoin Address: <b>{ this.state.ticket.address }</b></p>
@@ -200,10 +200,10 @@ let ClaimTicket = injectIntl(React.createClass({
                 </h3>
               </div>
               <div className="panel-body">
-                <p className="text-overflow">Ether fee to claimer: <b>{ this.state.ticket.feePercentage }</b></p>
+                <p className="text-overflow">SOILcoin fee to claimer: <b>{ this.state.ticket.feePercentage }</b></p>
                 <p className="text-overflow">Transaction amount: <b>{ this.state.ticket.btcPayment ? this.state.ticket.btcPayment + " BTC" : "" }</b></p>
                 <p className="text-overflow">Bitcoin address: <b>{ this.state.ticket.paymentAddr }</b></p>
-                <p className="text-overflow">Ether recipient: <b>{ this.state.ticket.etherAddr }</b></p>
+                <p className="text-overflow">SOILcoin recipient: <b>{ this.state.ticket.etherAddr }</b></p>
                 <p className="text-overflow">Transaction hash: <b>{ this.state.ticket.txHash }</b></p>
               </div>
             </div>
