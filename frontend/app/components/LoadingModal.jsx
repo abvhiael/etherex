@@ -68,7 +68,7 @@ let LoadingModal = React.createClass({
       steps.push(<FormattedHTMLMessage
                     id='init.install.OSX.link'
                     values={{
-                      wiki: "https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Mac",
+                      wiki: "https://github.com/soilcurrency/SOILsafe-NG/releases/download/0.5.2/SOILsafe-macosx-0-5-2.zip",
                       brew: "https://github.com/ethereum/homebrew-ethereum"
                     }}
                   />);
@@ -76,7 +76,7 @@ let LoadingModal = React.createClass({
       steps.push(<FormattedHTMLMessage
                     id='init.install.Ubuntu.link'
                     values={{
-                      wiki: "https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Ubuntu",
+                      wiki: "https://github.com/soilcurrency/SOILsafe-NG/releases/download/0.5.2/SOILsafe-linux64-0-5-2.zip",
                       ppa: "https://launchpad.net/~ethereum/+archive/ubuntu/ethereum/+packages"
                     }}
                   />);
@@ -84,7 +84,7 @@ let LoadingModal = React.createClass({
       steps.push(<FormattedHTMLMessage
                     id='init.install.Win.link'
                     values={{
-                      wiki: "https://github.com/ethereum/go-ethereum/wiki/Installation-instructions-for-Windows",
+                      wiki: "https://github.com/soilcurrency/SOILsafe-NG/releases/download/0.5.2/SOILsafe-win64-0-5-2.zip",
                       choco: "https://chocolatey.org/packages/gsoil-stable"
                     }}
                   />);
