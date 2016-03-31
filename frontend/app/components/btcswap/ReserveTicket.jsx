@@ -382,7 +382,7 @@ let ReserveTicket = injectIntl(React.createClass({
 
     this.setState({
       alertLevel: "info",
-      alertMessage: "Please wait for the Ethereum transaction to be confirmed, then broadcast the BTC transaction.",
+      alertMessage: "Please wait for your SOILcoin transaction to be confirmed, then broadcast the BTC transaction.",
       alertNote: null,
       showAlert: true
     });
@@ -455,7 +455,7 @@ let ReserveTicket = injectIntl(React.createClass({
                   <OverlayTrigger trigger={['hover', 'focus']} placement='top' overlay={
                     <Popover id="btc-total-popover">
                       Send the total BTC amount to this address. Make sure you also include
-                      a 0.3mBTC fee for the outgoing BTC transaction.
+                      a 0.0003 BTC fee for the outgoing BTC transaction.
                     </Popover>}>
                     <Input type="text" label="Address"
                       labelClassName="col-md-3" wrapperClassName="col-md-9"
@@ -465,8 +465,9 @@ let ReserveTicket = injectIntl(React.createClass({
 
                   <OverlayTrigger trigger={['hover', 'focus']} placement='top' overlay={
                     <Popover id="btc-wallet-popover">
-                      This is your intermediate BTC wallet key. Make sure you back it up
-                      if you do send funds to this wallet.
+                      This is your intermediate BTC wallet key. Please ensure that you back it up
+                      if you do send funds to this wallet. You cannot recover this wallet if you 
+                      lose your BTC wallet private key.
                     </Popover>}>
                     <Input type={this.state.keyVisible ? "text" : "password"} label="Key"
                       labelClassName="col-md-3" wrapperClassName="col-md-9"
@@ -481,12 +482,12 @@ let ReserveTicket = injectIntl(React.createClass({
                     readOnly
                     value={this.props.ticket.wallet.tx ? this.props.ticket.wallet.tx.hex : ''} />
 
-                  <Input type="number" ref="fee" label="Ether fee to claimer"
+                  <Input type="number" ref="fee" label="SOILcoin fee to claimer"
                     labelClassName="col-md-3" wrapperClassName="col-md-9"
                     disabled={!this.state.canCreateTx}
                     min="0" step="0.01" defaultValue="0"
                     addonAfter="%"
-                    help="Optional ether fee to claimer." />
+                    help="Optional SOIL fee to claimer." />
 
                   <div className="col-md-6">
                     <div className="container-fluid form-group">
