@@ -173,7 +173,7 @@ let SubRegister = injectIntl(React.createClass({
         <Input type="text" ref="code"
           label={this.props.intl.formatMessage({id: 'sub.code'})}
           pattern="[A-Z]{3,4}"
-          placeholder="ETX"
+          placeholder="DEV"
           value={ this.state.code }
           onChange={this.handleChange} />
 
@@ -187,7 +187,7 @@ let SubRegister = injectIntl(React.createClass({
         <Input type="number" ref="minimum"
           label={this.props.intl.formatMessage({id: 'sub.minimum'})}
           min="1" step="1"
-          placeholder="10"
+          placeholder="1"
           value={ this.state.minimum }
           onChange={this.handleChange} />
 
